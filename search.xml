@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[在win10下安装Oracle-12C时无法到达临时文件]]></title>
+    <title><![CDATA[解决oracle12c安装报“[INS-30131]执行安装程序验证所需的初始设置失败（原因：无法访问临时位置）”方法]]></title>
     <url>%2F2018%2F09%2F03%2F%E5%9C%A8win10%E4%B8%8B%E5%AE%89%E8%A3%85Oracle-12C%E6%97%B6%E6%97%A0%E6%B3%95%E5%88%B0%E8%BE%BE%E4%B8%B4%E6%97%B6%E6%96%87%E4%BB%B6%2F</url>
-    <content type="text"><![CDATA[安装受阻]]></content>
+    <content type="text"><![CDATA[安装受阻 在新的课程中需要使用Oracle数据库，于是下载安装了Oracle 12C版本，在win10环境下安装，可是在第一步就遇到了问题。 安装oracle11g碰到“无法访问临时位置”的问题，详细信息如下：INS-30131] 执行安装程序验证所需的初始设置失败。 原因 - 无法访问临时位置。操作 - 请确保当前用户具有访问临时位置所需的权限。附加信息: -所有节点上的框架设置检查都失败 -原因: 问题的原因不可用 -操作: 用户操作不可用 失败节点概要 pc-20130618muam -无法从节点 “pc-20130618muam” 检索 exectask 的版本 -原因: 问题的原因不可用 -操作: 用户操作不可用 解决过程 问问度娘，千篇一律的回答： 第一步： 控制面板&gt;所有控制面板项&gt;管理工具&gt;服务&gt;SERVER 启动 第二步： 控制面板&gt;所有控制面板项&gt;管理工具&gt;计算机管理&gt;系统工具&gt;共享文件夹&gt;共享 右键单击“共享”&gt;新建共享&gt; 点击“下一步”&gt; 单击“浏览”&gt; 选择”本地磁盘（C:）”&gt;确定 “共享名”输入 “C$” &gt;”下一步” ，OK!其中共享中权限设置为：管理员有完成访问权限，其他用户有只读访问权限(R)可是并没有解决问题。 解决方法 针对客户端安装，在cmd中执行命令： 1setup.exe -ignorePrereq -J&quot;-Doracle.install.client.validate.clientSupportedOSCheck=false&quot; 针对服务端安装，在cmd中执行命令： 1setup.exe -ignorePrereq -J&quot;-Doracle.install.db.validate.supportedOSCheck=false&quot;]]></content>
       <categories>
         <category>Oracle数据库</category>
       </categories>
