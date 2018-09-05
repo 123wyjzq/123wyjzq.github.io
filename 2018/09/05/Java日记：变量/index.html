@@ -123,18 +123,21 @@
 
 
 
-<meta name="description" content="变量的定义变量的定义是： 用来命名一个数据的标识符 1.Java中八种基本类型整型 byte       8位  short      16位  int         32位 long         64位  字符型 char       16位char类型用于存放一个字符，值用单引号’表示 (双引号表示字符串)  浮点型 float       32位 double      64位注意：">
+<meta name="description" content="变量的定义变量的定义是： 用来命名一个数据的标识符 Java中八种基本类型整型 byte       8位  short      16位  int         32位 long         64位  字符型 char       16位char类型用于存放一个字符，值用单引号’表示 (双引号表示字符串)  浮点型 float       32位 double      64位注意： 默认">
 <meta name="keywords" content="-Java -日常笔记">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java日记：变量">
 <meta property="og:url" content="http://yoursite.com/2018/09/05/Java日记：变量/index.html">
 <meta property="og:site_name" content="大王爱简简">
-<meta property="og:description" content="变量的定义变量的定义是： 用来命名一个数据的标识符 1.Java中八种基本类型整型 byte       8位  short      16位  int         32位 long         64位  字符型 char       16位char类型用于存放一个字符，值用单引号’表示 (双引号表示字符串)  浮点型 float       32位 double      64位注意：">
+<meta property="og:description" content="变量的定义变量的定义是： 用来命名一个数据的标识符 Java中八种基本类型整型 byte       8位  short      16位  int         32位 long         64位  字符型 char       16位char类型用于存放一个字符，值用单引号’表示 (双引号表示字符串)  浮点型 float       32位 double      64位注意： 默认">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-05T07:28:17.502Z">
+<meta property="og:image" content="http://yoursite.com/images/guanjianzi1.jpg">
+<meta property="og:image" content="http://yoursite.com/images/guanjianzi2.jpg">
+<meta property="og:updated_time" content="2018-09-05T13:42:28.145Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java日记：变量">
-<meta name="twitter:description" content="变量的定义变量的定义是： 用来命名一个数据的标识符 1.Java中八种基本类型整型 byte       8位  short      16位  int         32位 long         64位  字符型 char       16位char类型用于存放一个字符，值用单引号’表示 (双引号表示字符串)  浮点型 float       32位 double      64位注意：">
+<meta name="twitter:description" content="变量的定义变量的定义是： 用来命名一个数据的标识符 Java中八种基本类型整型 byte       8位  short      16位  int         32位 long         64位  字符型 char       16位char类型用于存放一个字符，值用单引号’表示 (双引号表示字符串)  浮点型 float       32位 double      64位注意： 默认">
+<meta name="twitter:image" content="http://yoursite.com/images/guanjianzi1.jpg">
 
 
 
@@ -429,7 +432,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1k
+                  1.6k
                 </span>
               
 
@@ -445,7 +448,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  3
+                  6
                 </span>
               
             </div>
@@ -467,7 +470,7 @@
 
       
         <h1 id="变量的定义"><a href="#变量的定义" class="headerlink" title="变量的定义"></a>变量的定义</h1><p>变量的定义是： 用来命名一个数据的标识符</p>
-<h1 id="1-Java中八种基本类型"><a href="#1-Java中八种基本类型" class="headerlink" title="1.Java中八种基本类型"></a>1.Java中八种基本类型</h1><h2 id="整型"><a href="#整型" class="headerlink" title="整型"></a>整型</h2><ul>
+<h1 id="Java中八种基本类型"><a href="#Java中八种基本类型" class="headerlink" title="Java中八种基本类型"></a>Java中八种基本类型</h1><h2 id="整型"><a href="#整型" class="headerlink" title="整型"></a>整型</h2><ul>
 <li>byte       8位 </li>
 <li>short      16位 </li>
 <li>int         32位</li>
@@ -482,18 +485,34 @@
 </li>
 </ul>
 <h2 id="布尔型"><a href="#布尔型" class="headerlink" title="布尔型"></a>布尔型</h2><p>用于表示真假，其长度为1位，虽然布尔型真正存放的数据是0(false) 1(true)但是，不能直接使用0 ，1 进行赋值。</p>
-<h1 id="2-字面值"><a href="#2-字面值" class="headerlink" title="2.字面值"></a>2.字面值</h1><p><em>给基本类型的变量赋值的方式叫做字面值</em></p>
+<h1 id="字面值"><a href="#字面值" class="headerlink" title="字面值"></a>字面值</h1><p><em>给基本类型的变量赋值的方式叫做字面值</em></p>
 <h2 id="整数的字面值"><a href="#整数的字面值" class="headerlink" title="整数的字面值"></a>整数的字面值</h2><p>当以l或者L结尾的时候，一个整数字面值是long类型，否则就是int类型。 建议使用大写的L，因为小写的l容易和1混淆。<br>byte,short,int和long的值都可以通过int类型的字面值来创建。整数的字面值可以用如下四种进制来表示（二进制，八进制，十进制，十六进制）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">public class HelloWorld &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        long val = 26L; //以L结尾的字面值表示long型</span><br><span class="line">        int decVal = 26; //默认就是int型</span><br><span class="line">        int hexVal = 0x1a; //16进制</span><br><span class="line">        int oxVal = 032; //8进制</span><br><span class="line">        int binVal = 0b11010; //2进制</span><br><span class="line">        System.out.println(oxVal);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <h2 id="浮点数的字面值"><a href="#浮点数的字面值" class="headerlink" title="浮点数的字面值"></a>浮点数的字面值</h2><p>当以f或者F结尾的时候，就表示一个float类型的浮点数，否则就是double类型，浮点数还可以用E或者e表示（科学计数法）e2表示10的二次方，即100，1.234e2 = 1.234x100。</p>
 <h2 id="字符和字符串字面值"><a href="#字符和字符串字面值" class="headerlink" title="字符和字符串字面值"></a>字符和字符串字面值</h2><p>字符的字面值放在单引号中</p>
 <p>字符串的字面值放在双引号中</p>
 <p>需要注意的是，\表示转义，比如需要表示制表符，回车换行，双引号等就需要用 \t \r \n \” 的方式进行</p>
-<h1 id="3-类型转换"><a href="#3-类型转换" class="headerlink" title="3.类型转换"></a>3.类型转换</h1><h2 id="转化规则"><a href="#转化规则" class="headerlink" title="转化规则"></a>转化规则</h2><blockquote>
+<h1 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h1><h2 id="转化规则"><a href="#转化规则" class="headerlink" title="转化规则"></a>转化规则</h2><blockquote>
 <p>精度高的数据类型就像容量大的杯子，可以放更大的数据 精度低的数据类型就像容量小的杯子，只能放更小的数据<br>小杯子往大杯子里倒东西，大杯子怎么都放得下<br>大杯子往小杯子里倒东西，有的时候放的下，有的时候就会有溢出</p>
 </blockquote>
 <p> <em>虽然short和char都是16位的，长度是一样的，但是彼此之间，依然需要进行强制转换</em><br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"> public class HelloWorld &#123;</span><br><span class="line"> </span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line"> </span><br><span class="line">        char c = &apos;A&apos;;</span><br><span class="line">        short s = 80;</span><br><span class="line">         </span><br><span class="line">        //虽然short和char都是16位的，长度是一样的</span><br><span class="line">        //但是彼此之间，依然需要进行强制转换</span><br><span class="line">        c = (char) s;</span><br><span class="line">        //直接进行转换，会出现编译错误</span><br><span class="line">        s = c;</span><br><span class="line">         </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <h2 id="低精度向高精度转换"><a href="#低精度向高精度转换" class="headerlink" title="低精度向高精度转换"></a>低精度向高精度转换</h2><p>低精度向高精度转换 是可以正常转换的<br>比如说，int比较小，要放进比较大的long,随便怎么样，都放的进去。</p>
 <h2 id="高精度向低精度转换"><a href="#高精度向低精度转换" class="headerlink" title="高精度向低精度转换"></a>高精度向低精度转换</h2><p>byte类型长度是8，最大只能放127<br>int类型长度是32,超过127<br>所以， 把int类型的数据转成为byte类型的数据，<strong>是有风险的</strong>有的时候是可以转换的，有的时候不可以转换，因为放不下了，编译器就会提示错误这个时候就只能采用<strong>强制转换</strong> 强制转换的意思就是，转是可以转的，但是不对转换之后的值负责。 风险自担，后果自负。<br><strong>注意：任何何精度小于int的类型变量相加都会自动转换为int后计算，则值默认输出的是int型，如下：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">public class Type &#123;</span><br><span class="line">   public static void main(String[]args)&#123;</span><br><span class="line">       short a=1;</span><br><span class="line">       short b=2;</span><br><span class="line">       int c=a+b;    </span><br><span class="line">       //short c=a+b; 提示错误，不能从int转换为short ，a+b最后是int类型</span><br><span class="line">       System.out.println(c);</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h1 id="命名规则"><a href="#命名规则" class="headerlink" title="命名规则"></a>命名规则</h1><ul>
+<li>变量命名只能使用字母 数字 $ _ 但变量第一个字符 只能使用 字母 $ _ 变量第一个字符 不能使用数字 ，也不推荐使用$</li>
+<li>在命名的时候，尽量使用完整的单词进行命名</li>
+<li>不能只使用关键字，但是可以包含关键字(关键字如下)<br><img src="/images/guanjianzi1.jpg" alt="关键字1"><br><img src="/images/guanjianzi2.jpg" alt="关键字2"></li>
+</ul>
+<h1 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a>作用域</h1><p><em>变量处于不同的位置，有不同的名称 （字段，属性 ,参数, 局部变量 )不同名称的变量，其作用域是不一样的</em></p>
+<h2 id="字段，属性，Field"><a href="#字段，属性，Field" class="headerlink" title="字段，属性，Field"></a>字段，属性，Field</h2><p>当一个变量被声明在<em>类</em>下面，变量就叫做字段或者属性，成员变量，Field。<br><strong>所以其作用域就是从其声明的位置开始的整个类</strong></p>
+<h2 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h2><p>如果一个变量，是<strong>声明在一个方法上</strong>的，就叫做<em>参数</em><br>参数的作用域即为该方法内的所有代码，<br>其他方法不能访问该参数，<br>类里面也不能访问该参数。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">public class HelloWorld &#123;</span><br><span class="line"></span><br><span class="line">	public void method1(int i)&#123; //参数i的作用域即方法method1</span><br><span class="line">		System.out.println(i);</span><br><span class="line">	&#125;</span><br><span class="line">	public void method2()&#123; </span><br><span class="line"></span><br><span class="line">		System.out.println(i); //method2 不能访问参数i</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	int j = i;  //类里面也不能访问参数i</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="局部变量"><a href="#局部变量" class="headerlink" title="局部变量"></a>局部变量</h2><p><strong>声明在方法内的变量，叫做局部变量</strong><br>其作用域在声明开始的位置，到其所处于的块结束位置<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">public class HelloWorld &#123;</span><br><span class="line"> </span><br><span class="line">    public void method1() &#123;</span><br><span class="line">        int i  = 5;  //其作用范围是从声明的第4行，到其所处于的块结束12行位置</span><br><span class="line">        System.out.println(i);</span><br><span class="line">        &#123;            //子块</span><br><span class="line">            System.out.println(i); //可以访问i</span><br><span class="line">            int j = 6;</span><br><span class="line">            System.out.println(j); //可以访问j</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(j); //不能访问j,因为其作用域到第10行就结束了</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h1 id="final"><a href="#final" class="headerlink" title="final"></a>final</h1><p><strong>当一个变量被final修饰的时候，该变量只有一次赋值的机会</strong><br>我的理解是final修饰的变量，在赋值后是一个常量。<br>使用关键字final修饰的方法、变量、类，不可以修改或赋值。<br><em>final除了修饰变量，还可以修饰类，修饰方法</em><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">public class HelloWorld &#123;</span><br><span class="line"></span><br><span class="line">    public void method1(final int j) &#123;</span><br><span class="line">    	j = 5; //这个无法执行？</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>上面的代码执行是会报错的，因为调用这个方法的时候要对j赋值，但是j被final修饰，不能被重复赋值。</p>
+<h1 id="表达式"><a href="#表达式" class="headerlink" title="表达式"></a>表达式</h1><ul>
+<li>以 <em>;</em> 结尾的一段代码，即为一个表达式。 </li>
+<li><em>；</em> 自身也是一个完整的表达式</li>
+</ul>
+<h1 id="块"><a href="#块" class="headerlink" title="块"></a>块</h1><p>从{ 开始 到对应的} 结束，即一个块</p>
 
       
     </div>
@@ -707,7 +726,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#变量的定义"><span class="nav-number">1.</span> <span class="nav-text">变量的定义</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#1-Java中八种基本类型"><span class="nav-number">2.</span> <span class="nav-text">1.Java中八种基本类型</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#整型"><span class="nav-number">2.1.</span> <span class="nav-text">整型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字符型"><span class="nav-number">2.2.</span> <span class="nav-text">字符型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#浮点型"><span class="nav-number">2.3.</span> <span class="nav-text">浮点型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#布尔型"><span class="nav-number">2.4.</span> <span class="nav-text">布尔型</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-字面值"><span class="nav-number">3.</span> <span class="nav-text">2.字面值</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#整数的字面值"><span class="nav-number">3.1.</span> <span class="nav-text">整数的字面值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#浮点数的字面值"><span class="nav-number">3.2.</span> <span class="nav-text">浮点数的字面值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字符和字符串字面值"><span class="nav-number">3.3.</span> <span class="nav-text">字符和字符串字面值</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-类型转换"><span class="nav-number">4.</span> <span class="nav-text">3.类型转换</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#转化规则"><span class="nav-number">4.1.</span> <span class="nav-text">转化规则</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#低精度向高精度转换"><span class="nav-number">4.2.</span> <span class="nav-text">低精度向高精度转换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#高精度向低精度转换"><span class="nav-number">4.3.</span> <span class="nav-text">高精度向低精度转换</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#变量的定义"><span class="nav-number">1.</span> <span class="nav-text">变量的定义</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Java中八种基本类型"><span class="nav-number">2.</span> <span class="nav-text">Java中八种基本类型</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#整型"><span class="nav-number">2.1.</span> <span class="nav-text">整型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字符型"><span class="nav-number">2.2.</span> <span class="nav-text">字符型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#浮点型"><span class="nav-number">2.3.</span> <span class="nav-text">浮点型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#布尔型"><span class="nav-number">2.4.</span> <span class="nav-text">布尔型</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#字面值"><span class="nav-number">3.</span> <span class="nav-text">字面值</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#整数的字面值"><span class="nav-number">3.1.</span> <span class="nav-text">整数的字面值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#浮点数的字面值"><span class="nav-number">3.2.</span> <span class="nav-text">浮点数的字面值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字符和字符串字面值"><span class="nav-number">3.3.</span> <span class="nav-text">字符和字符串字面值</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#类型转换"><span class="nav-number">4.</span> <span class="nav-text">类型转换</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#转化规则"><span class="nav-number">4.1.</span> <span class="nav-text">转化规则</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#低精度向高精度转换"><span class="nav-number">4.2.</span> <span class="nav-text">低精度向高精度转换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#高精度向低精度转换"><span class="nav-number">4.3.</span> <span class="nav-text">高精度向低精度转换</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#命名规则"><span class="nav-number">5.</span> <span class="nav-text">命名规则</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#作用域"><span class="nav-number">6.</span> <span class="nav-text">作用域</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#字段，属性，Field"><span class="nav-number">6.1.</span> <span class="nav-text">字段，属性，Field</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参数"><span class="nav-number">6.2.</span> <span class="nav-text">参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#局部变量"><span class="nav-number">6.3.</span> <span class="nav-text">局部变量</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#final"><span class="nav-number">7.</span> <span class="nav-text">final</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#表达式"><span class="nav-number">8.</span> <span class="nav-text">表达式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#块"><span class="nav-number">9.</span> <span class="nav-text">块</span></a></li></ol></div>
             
 
           </div>
