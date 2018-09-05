@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Java日记：变量]]></title>
+    <url>%2F2018%2F09%2F05%2FJava%E6%97%A5%E8%AE%B0%EF%BC%9A%E5%8F%98%E9%87%8F%2F</url>
+    <content type="text"><![CDATA[变量的定义变量的定义是： 用来命名一个数据的标识符 1.Java中八种基本类型整型 byte 8位 short 16位 int 32位 long 64位 字符型 char 16位char类型用于存放一个字符，值用单引号’表示 (双引号表示字符串) 浮点型 float 32位 double 64位注意： 默认的小数值是double类型的123456789101112public class HelloWorld&#123; public static void main(String[] args)&#123; double d = 123.45; //该行会出现编译错误，因为54.321是double型的 float f = 54.321; //在数字后面加一个字母f，直接把该数字声明成float类型 float f2 = 54.321f; &#125;&#125; 布尔型用于表示真假，其长度为1位，虽然布尔型真正存放的数据是0(false) 1(true)但是，不能直接使用0 ，1 进行赋值。 2.字面值给基本类型的变量赋值的方式叫做字面值 整数的字面值当以l或者L结尾的时候，一个整数字面值是long类型，否则就是int类型。 建议使用大写的L，因为小写的l容易和1混淆。byte,short,int和long的值都可以通过int类型的字面值来创建。整数的字面值可以用如下四种进制来表示（二进制，八进制，十进制，十六进制）12345678910public class HelloWorld &#123; public static void main(String[] args) &#123; long val = 26L; //以L结尾的字面值表示long型 int decVal = 26; //默认就是int型 int hexVal = 0x1a; //16进制 int oxVal = 032; //8进制 int binVal = 0b11010; //2进制 System.out.println(oxVal); &#125;&#125; 浮点数的字面值当以f或者F结尾的时候，就表示一个float类型的浮点数，否则就是double类型，浮点数还可以用E或者e表示（科学计数法）e2表示10的二次方，即100，1.234e2 = 1.234x100。 字符和字符串字面值字符的字面值放在单引号中 字符串的字面值放在双引号中 需要注意的是，\表示转义，比如需要表示制表符，回车换行，双引号等就需要用 \t \r \n \” 的方式进行 3.类型转换转化规则 精度高的数据类型就像容量大的杯子，可以放更大的数据 精度低的数据类型就像容量小的杯子，只能放更小的数据小杯子往大杯子里倒东西，大杯子怎么都放得下大杯子往小杯子里倒东西，有的时候放的下，有的时候就会有溢出 虽然short和char都是16位的，长度是一样的，但是彼此之间，依然需要进行强制转换 123456789101112131415 public class HelloWorld &#123; public static void main(String[] args) &#123; char c = &apos;A&apos;; short s = 80; //虽然short和char都是16位的，长度是一样的 //但是彼此之间，依然需要进行强制转换 c = (char) s; //直接进行转换，会出现编译错误 s = c; &#125;&#125; 低精度向高精度转换低精度向高精度转换 是可以正常转换的比如说，int比较小，要放进比较大的long,随便怎么样，都放的进去。 高精度向低精度转换byte类型长度是8，最大只能放127int类型长度是32,超过127所以， 把int类型的数据转成为byte类型的数据，是有风险的有的时候是可以转换的，有的时候不可以转换，因为放不下了，编译器就会提示错误这个时候就只能采用强制转换 强制转换的意思就是，转是可以转的，但是不对转换之后的值负责。 风险自担，后果自负。注意：任何何精度小于int的类型变量相加都会自动转换为int后计算，则值默认输出的是int型，如下：123456789public class Type &#123; public static void main(String[]args)&#123; short a=1; short b=2; int c=a+b; //short c=a+b; 提示错误，不能从int转换为short ，a+b最后是int类型 System.out.println(c); &#125;&#125;]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>-Java -日常笔记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[解决oracle12c安装报“[INS-30131]执行安装程序验证所需的初始设置失败（原因：无法访问临时位置）”方法]]></title>
     <url>%2F2018%2F09%2F03%2F%E5%9C%A8win10%E4%B8%8B%E5%AE%89%E8%A3%85Oracle-12C%E6%97%B6%E6%97%A0%E6%B3%95%E5%88%B0%E8%BE%BE%E4%B8%B4%E6%97%B6%E6%96%87%E4%BB%B6%2F</url>
     <content type="text"><![CDATA[安装受阻 在新的课程中需要使用Oracle数据库，于是下载安装了Oracle 12C版本，在win10环境下安装，可是在第一步就遇到了问题。 安装oracle11g碰到“无法访问临时位置”的问题，详细信息如下：INS-30131] 执行安装程序验证所需的初始设置失败。 原因 - 无法访问临时位置。操作 - 请确保当前用户具有访问临时位置所需的权限。附加信息: -所有节点上的框架设置检查都失败 -原因: 问题的原因不可用 -操作: 用户操作不可用 失败节点概要 pc-20130618muam -无法从节点 “pc-20130618muam” 检索 exectask 的版本 -原因: 问题的原因不可用 -操作: 用户操作不可用 解决过程 问问度娘，千篇一律的回答： 第一步： 控制面板&gt;所有控制面板项&gt;管理工具&gt;服务&gt;SERVER 启动 第二步： 控制面板&gt;所有控制面板项&gt;管理工具&gt;计算机管理&gt;系统工具&gt;共享文件夹&gt;共享 右键单击“共享”&gt;新建共享&gt; 点击“下一步”&gt; 单击“浏览”&gt; 选择”本地磁盘（C:）”&gt;确定 “共享名”输入 “C$” &gt;”下一步” ，OK!其中共享中权限设置为：管理员有完成访问权限，其他用户有只读访问权限(R)可是并没有解决问题。 解决方法 针对客户端安装，在cmd中执行命令： 1setup.exe -ignorePrereq -J&quot;-Doracle.install.client.validate.clientSupportedOSCheck=false&quot; 针对服务端安装，在cmd中执行命令： 1setup.exe -ignorePrereq -J&quot;-Doracle.install.db.validate.supportedOSCheck=false&quot;]]></content>
